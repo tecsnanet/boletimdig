@@ -1,0 +1,74 @@
+<nav class="navbar navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Página inicial admin</a>
+    {{!-- <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Cadastrar</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          {{!-- <li class="nav-item">
+            <a class="nav-link" href="/cadAluno" style="color: black;">cadastrar Aluno</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/adm/cadProfessor" style="color: black;">Cadastrar Professor</a>
+          </li> --}}
+      </div>
+    </div>
+  </div>
+</nav>
+<hr> --}}
+
+    <div class="container-lg " style="width:40%;">
+        <form  style="margin-top: 20%;" action="/adm/cadastroProfessor" method="post">
+            <h1 style="text-align: center;" id="text">cadastrar Professor</h1>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Cpf</label>
+            <input type="text" name="cpf" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Nome</label>
+            <input type="text" name="nome" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            {{!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> --}}
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Email</label>
+            <input type="email" name="email" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Senha</label>
+            <input type="password" name="senha" class="form-control" id="exampleInputPassword1">
+        </div>
+        <button  style="margin-left: 38%;" type="submit" class="btn btn-primary mt-4">Cadastrar</button>
+    </form>
+  
+
+    <div class="container-lg" style="width: 40%;">
+        <form style="margin-top: 20%;" action="/adm/cadastroAluno" method="post">
+            <h1 style="text-align: center;" id="text">cadastrar Aluno</h1>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Nome</label>
+            <input type="text" name="nome" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            {{!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> --}}
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Email</label>
+            <input type="email" name="email" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Senha</label>
+            <input type="password" name="senha" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Matrícula</label>
+            <input type="text" name="matricula" class="form-control" id="exampleInputPassword1">
+        </div>
+        <button  style="margin-left: 38%;" type="submit" class="btn btn-primary mt-4">Cadastrar</button>
+    </form>
+<br>
+<br>
+
